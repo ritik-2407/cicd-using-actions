@@ -20,6 +20,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /root/nodejs-application-deploy-github-actions
+            cd /home/ubuntu/cicd-using-actions
             git pull
             docker compose up -d --build
